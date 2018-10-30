@@ -1,148 +1,313 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../css/contact.css" media="all" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
-    <link rel="shortcut icon" type="image/x-icon" href="../resources/4171logo.ico"/>
-    <title>Contact</title>
-  </head>
 
-  <body>
-    <section class="contact-us">
-      <article class="centered-content">
-        <div class="contact-us__form">
-          <div><h1>CONTACT US</h1></div>
-          <div class="form__container">
-            <article style="display: inline-block; padding: 20px;">
-              <p>
-                Use this form to contact us. 
-                Please note that all fields with an * are required.
-              </p>
-              <form>
-                <label for="firstname">Name</label>
-                <input id="firstname" type="text" name="firstname">
-                  
-                <label for="email">Email</label>
-                <input id="email" type="text" name="email">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 
-                <label for="usrtel">Phone</label>
-                <input id="usrtel" type="tel" name="usrtel">
+  <link rel="stylesheet" href="js/slick-1.8.0/slick/slick.css" />
+  <link rel="stylesheet" href="js/slick-1.8.0/slick/slick-theme.css" />
 
-                
-                <label for="message">Message</label>
-                <textarea cols="30" rows="10" name="message"></textarea>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./resources/4171logo.ico" />
+  <title>MasterMind</title>
+</head>
 
-                <input class="send-button" type="submit" value="SEND">
-              </form>
-            </article>
+<body>
+  <header class="header-style">
+    <div class="header-style__content">
+      <a title="index" href="#default" class="header-style__logo"><img class="" src="./resources/logo.png" alt=""></a>
+    </div>
+
+    <nav class="header-style__nav">
+      <div class="centered-nav">
+        <div class="nav__links"><a title="Accueil" class="active" href="pages/home.html">HOME</a></div>
+        <div class="nav__links dropdown">
+          <a class="droplink" title="a propos" href="#contact">ABOUT</a>
+          <div class="dropdown__container">
+            <a href="#">our history</a>
+            <a href="#">our clients</a>
+            <a href="#">FAQs</a>
           </div>
         </div>
-
-        <div class="contact-us__map">
-          <article style="display: inline-block; padding: 20px;">
-            <div id="googleMap"></div>
-            <div class="contact-us__location">
-              <div class="location__headquarter">
-                <h2>US HEADQUARTERS</h2>
-                <div>4000 Civic Center Drive</div>
-                <div>Suite 500</div>
-                <div>San Rafael, CA 94903</div>
-                <div>USA</div>
-                <div>Phone +44(0)845 299 8199</div>
-              </div>
-
-              <div>
-                <h2>UK OFFICES</h2>
-                <p>
-                  1 Sekforde Street, Clerkenwell, 
-                  London, EC1R 0BE, 
-                  United Kingdom
-                  Phone +44(0)845 299 8199
-                </p>
-              </div>
-            </div>
-            
-          </article>
+        <div class="nav__links"><a title="projets" href="#information">PROJECTS</a></div>
+        <div class="nav__links"><a title="services" href="pages/services.html">SERVICES</a></div>
+        <div class="nav__links"><a title="contact" href="pages/contact.html">CONTACTS</a></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="section mastermind">
+      <article class="centered-content">
+        <div class="mastermind__container">
+          <h1>MASTERMIND COACHING & MENTORING</h1>
+          <img class="section-1-img-mobile" src="./resources/page2-img2.jpg" alt="mastermind-img">
+          <ul>
+            <li>Get crystal clear information where you're going and how to get there</li>
+            <li>Attract more enquiries, win more sales and get your customers spending more</li>
+            <li>Gain control over your finances, improve cash flow and increase profitability</li>
+            <li>Sort out your systems, become more efficient, and get more done with less effort</li>
+          </ul>
+          <p>
+            Our Business Coaching and Mentoring Programme is a powerful one-on-one process where we’ll transform your
+            business from where it is now, to where you want to go. With our ‘know how - can do’ approach, you’ll
+            develop the knowledge and skills that you need to get ahead.
+            Our process has been specifically designed for small businesses and it works. We’ll help you master the 5
+            Key Capabilities - leadership, marketing, sales, finances and operations - so that you acheive your vision
+            and much more...
+          </p>
+        </div>
+        <div>
+          <img class="section-1-img-desktop" src="./resources/page2-img2.jpg" alt="mastermind-img">
         </div>
       </article>
     </section>
 
-    <section class="team-leader">
-      <div class="team-leader__container">
-        <div><h1>OUR TEAM LEADERS</h1></div>
-        <div><p>Get your mouse over the pictures to know more about our team leaders and click on it to get their full contact and CV.</p></div>
-        <div class="team-leader__people">
-          <div class="container">
-            <img src="../resources/page2-img3.jpg" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">Chandler VANCOVA</div>
-              <div class="text">Marketing Manager</div>
-            </div>
-          </div>
-          <div class="container">
-            <img src="../resources/page2-img4.jpg" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">Diane MARVIN</div>
-              <div class="text">Human Resources</div>
-            </div>
-          </div>
-          <div class="container">
-            <img src="../resources/page2-img5.jpg" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">Patrick POOL</div>
-              <div class="text">Business Development</div>
-            </div>
-          </div>
-          <div class="container">
-            <img src="../resources/page2-img6.jpg" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">Alise PUSE</div>
-              <div class="text">Banking Consultant</div>
-            </div>
-          </div>
-          <div class="container">
-            <img src="../resources/page2-img7.jpg" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">Mark JOHNSON</div>
-              <div class="text">Business Analyst</div>
-            </div>
-          </div>
-          <div class="container">
-            <img src="../resources/page2-img8.jpg" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">Bradley grosh</div>
-              <div class="text">Commercial Manager</div>
+
+    <section class="section expertise">
+      <article class="centered-content">
+        <div class="expertise__container wrapper-slider">
+          <div class="container-slider">
+            <div class="slider">
+              <div class="expertise__container__slides ">
+                <img src="./resources/section-2_image-1.jpg" alt="Business-analytics-img">
+                <h2>Business Analytics </h2>
+                <p>
+                  At vero eos et accusamus et
+                  iusto odioll dignissimos
+                  ducimus qui bl abd gdihtiiti
+                  praesentium voluptatum deenir
+                  rf uiti jlle atque. Corrupti quos
+                  doloregts. At vero wartynomi
+                  dertorrupti.
+                </p>
+                <div class="more-container"><button class="more-button">More</button></div>
+              </div>
+
+              <div class="expertise__container__slides">
+                <img src="./resources/page1-img6.jpg" alt="Strategies-img">
+                <h2>Growth Strategies</h2>
+                <p>
+                  Aolity vero eos et accusamus
+                  et iustokill odio dignissimos
+                  ducimus qui bl abduyl gdihtii
+                  praesentium voluptatum deenir
+                  rfi uiti jil atque. Dertorrupti
+                  quos doloregts hipterq
+                  occaecati vero eos.
+                </p>
+                <div class="more-container"><button class="more-button">More</button></div>
+              </div>
+
+              <div class="expertise__container__slides">
+                <img src="./resources/page1-img7.jpg" alt="Commercial-img">
+                <h2>Smarter Commerce</h2>
+                <p>
+                  Tro eos et accusamus et iusto
+                  odioyrew dignissimos ducimus
+                  qui bl abd gdihtii praesentium
+                  voluptatum deenir rf uiti jile
+                  atque. Holrrupti quos doloregts
+                  et quasi molestias excepturi
+                  sint hip occaecati.
+                </p>
+                <div class="more-container"><button class="more-button">More</button></div>
+              </div>
+
+              <div class="expertise__container__slides">
+                <img src="./resources/page1-img8.jpg" alt="Market-img">
+                <h2>Market Research</h2>
+                <p>
+                  Hfvero eos et accusamus et
+                  iusto odiotri dignissimos
+                  ducimus qui bl abd gdihtii
+                  praesentium voluptatum deenir
+                  rf uiti jilo atque. Dorupti quos
+                  doloregts et quase molestias
+                  excepturi sint hip occaecati.
+                </p>
+                <div class="more-container"><button class="more-button">More</button></div>
+              </div>
+
+              <div class=" expertise__container__slides ">
+                <img src="./resources/section-2_image-1.jpg" alt="Business-analytics-img">
+                <h2>Growth</h2>
+                <p>
+                  At vero eos et accusamus et
+                  iusto odioll dignissimos
+                  ducimus qui bl abd gdihtiiti
+                  praesentium voluptatum deenir
+                  rf uiti jlle atque. Corrupti quos
+                  doloregts. At vero wartynomi
+                  dertorrupti.
+                </p>
+                <div class="more-container"><button class="more-button">More</button></div>
+              </div>
+
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </section>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script>
-      /*function myMap() {
-        var mapProp = {
-          center: new google.maps.LatLng(51.5238524, -0.10477830000002086),
-          zoom: 5,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-      }*/
-      function initMap() {
-        // The location of (you want)
-        var position = {lat: 51.5238524, lng: -0.10477830000002086};
-        // The map, centered at (you want)
-        var map = new google.maps.Map(document.getElementById('googleMap'), {zoom: 15, center: position});
-        // The marker, positioned at (you want)
-        var marker = new google.maps.Marker({position: position, map: map});
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACWqGTYGT4CJS2IWhI5QxZmBaVnIKVo6o&callback=initMap" style="width:800px; height:600px"></script>
-    <script> src="../js/index.js"</script>
-  </body>
+    <section class="section information">
+      <article class="centered-content">
+        <div class="information__about-us">
+          <h1 class="title-left">ABOUT US</h1>
+          <div>
+            <img class="section-3_img" src="./resources/page1-img9.jpg" alt="team-img">
+            <div>
+              <p class="txt-blue">
+                MasterMind strives to collaborate with
+                customers who have the ambition to be
+                “best-in-class” in their activities.
+              </p>
+              <p>
+                The search for excellence guides our
+                actions. MasterMind's service strategy
+                is simple: provide our clients with
+              </p>
+
+            </div>
+          </div>
+          <p style="clear: both;">
+            These solutions are tailored to the needs of each client and the services
+            we offer include systems design, development, deployment, training,
+            change and project management and support.
+          </p>
+          <p style="clear: both;">
+            MasterMind has built its success on the partnerships that it creates with
+            its clients. Stemming from its comprehensive commercial and technical
+            understanding of business needs, MasterMind views its role as much
+            more than a mere applications publisher and seller.
+          </p>
+          <div class="about-us__more-container"><button class="more-button">MORE</button></div>
+        </div>
+
+        <div class="information__news">
+          <h1 class="title-left">LATEST NEWS</h1>
+          <article>
+            <div class="news__title">
+              <div class="news__date">
+                <div class="news__post-day">
+                  27
+                </div>                
+                <div class="news__post-month">
+                  APR
+                </div>
+              </div>
+              <p class="post__title">
+                Duis posuere consectetur pellentesqe
+                <span class="date-publish">
+                  April 27, 2014
+                </span>
+              </p>
+            </div>
+            <p>
+              Sed nisi turpis pellentesque at ultrices in dapibus in
+              magnatr. Nunc easi diam risus placerat ut
+              scelerisque et suscipit euter ante. Nullam vitae dolor
+              ullcper felises cursus gravida.
+            </p>
+          </article>
+
+          <article>
+            <div class="news__title">
+              <div class="news__date">
+                <div class="news__post-day">
+                  29
+                </div>
+                <div class="news__post-month">
+                  APR
+                </div>
+              </div>
+              <p class="post__title">
+                Asuis kosuer fronsectetuo ellentesqi.
+                <span class="date-publish">
+                  April 29, 2014
+                </span>
+              </p>
+            </div>
+            <p>
+              Hoed nisi turpis, pellentesque at ultrices idapibus in
+              magnawe. Lunc easi diam risus, placerat ut
+            </p>
+          </article>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="centered-footer">
+      <article>
+        <p class="txt-blue">
+          MASTERMIND &copy; 2018
+          <span class="policy__text" style="display:block;">PRIVACY POLICY</span>
+        </p>
+      </article>
+
+      <article>
+        <p class="txt-blue">subscribe to our newsletter:</p>
+        <input type="text" placeholder="your email address"><button class="footer-button">OK</button>
+      </article>
+
+      <article>
+        <a title="contact-mail" href=""><i class="fa fa-envelope footer__social-network" aria-hidden="true"></i></a>
+        <a title="contact-rss" href=""><i class="fa fa-rss footer__social-network" aria-hidden="true"></i></a>
+        <a title="contact-twitter" href=""><i class="fa fa-twitter footer__social-network" aria-hidden="true"></i></a>
+      </article>
+    </section>
+  </footer>
+
+  <!--Scripts:-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick-1.8.0/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".slider").slick({
+        prevArrow: "<img class='arrowleft control-c prev slick-prev'  src='resources/arrow-left.png'>",
+        nextArrow: "<img class='arrowright control-c next slick-next' src='resources/arrow-right.png'>",
+        adaptativeHeight: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+  </script>
+</body>
 
 </html>
