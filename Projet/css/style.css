@@ -6,28 +6,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+h1 {
   color: #85ccd9;
   font-family: Cabin;
   text-align: center;
 }
 
-h2{
+h2 {
   color: #16445c;
   font-family: Cabin;
-  text-align: center;
 }
 
-button{
+button {
   font-family: Cabin;
 }
 
 .section {
   padding: 10px 15px;
-}
-
-.more-container{
-  text-align: center;
 }
 
 .more-button{
@@ -47,7 +42,7 @@ button{
 }
 
 /*Centre toute les images*/
-img{
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -156,20 +151,57 @@ img{
   margin: 20px; /*Espaces entre chaques slides */
 }
 
+.wrapper-slider{
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.container-slider{
+  width: 100%;
+  position: relative;
+}
+
 /*******************************************
-  Section 3: information us and lastest new
+  Section 3: about us and lastest new
 ********************************************/
 .information__news{
   padding: 20px; /*espace entre le moreButton et news */
 }
 
-.information__news > article > div > div{
-  display: inline-block;
+.news__date{
+  /*display: inline-block;*/
   background-color: #16445c;
   /* ToDo get size from template */
-  width: 75px;
-  height: 75px;
-  text-align: center;
+  display: inline-block;
+    background-color: #16445c;
+    color: white;
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    /*align-content: center;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.news__post-day{
+  font-size: 30px;
 }
 
 .news__post{
@@ -302,6 +334,37 @@ footer{
     margin: auto;
   }
 
+  .dropdown{
+    /*position: relative;*/
+    display: inline-block;
+  }
+
+  .droplink{
+
+  }
+
+  .dropdown__container{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown__container a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown__container a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown__container {display: block;}
+
+  /*.dropdown:hover .droplink {background-color: #3e8e41;}*/
+
   .section-1-img-desktop {
     display: block;
   }
@@ -313,15 +376,21 @@ footer{
   /**********************
   *  Section2: Expertise
   **********************/
-  .expertise__container{
-    display: inline-flex;
+  .expertise__container, .wrapper-slider{
+    width: 100%;
+  }
+
+  .about-us__more-container{
+
   }
 
   /*
     Bouton more vers la gauche voir: http://jsfiddle.net/cynbp3j0/3188/ */
-  .more-container{
+  .more-container {
     text-align: left;
   }
+
+  
 
   /****************************
   * Section 3: about us & news
