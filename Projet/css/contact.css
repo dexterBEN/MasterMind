@@ -26,6 +26,22 @@ h2{
   
 }
 
+#googleMap{
+  margin-top: 10px;
+  width:100%;
+  height:400px;
+}
+
+.form__container-column{
+  display: inline-block; 
+  padding: 20px;
+}
+
+.contact-us__map-column{
+  display: inline-block; 
+  padding: 20px;
+}
+
 input[type=text], [type=tel], textarea {
   width: 100%;
   padding: 12px 20px;
