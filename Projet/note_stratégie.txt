@@ -1,0 +1,11 @@
+1)Utilisation des médias querys pour le responsive (Desktop mobile)
+
+2)Intégration en mobile first puis Desktop
+
+3)Utilisation des webkit pour faciliter le rendue sur différent navigateur
+
+4)Utilisation de la méthode BEM(parent__child) pour le nommage des class voir: 
+-http://getbem.com/naming/
+-https://css-tricks.com/bem-101/
+
+5) Utilisation de l'extension opquast desktop afin de vérifier la conformit

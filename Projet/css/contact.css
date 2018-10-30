@@ -1,0 +1,117 @@
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  color: #85ccd9;
+  font-family: Cabin;
+}
+
+h2{
+  color: #16445c;
+  font-family: Cabin;
+}
+
+/************************
+  section 1: Contact Us
+************************/
+.contact-us_col1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us_col2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+form > div > div > input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.col-100 {
+  /*float: left;*/
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.send-button{
+  background-color: #ff592f;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  text-transform: uppercase;
+  content: "SEND";
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/***************
+  section 2:
+***************/
+
+.team-leader{
+  background-color: #eff1f0;
+}
+.team-leader__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*A résoudre: ce flex centre le titre et le texte mais pas les images*/
+.team-leader__people{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.container {
+  position: relative;
+  margin: 10px;
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 20%;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+}
+

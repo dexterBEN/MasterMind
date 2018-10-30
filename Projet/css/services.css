@@ -1,0 +1,166 @@
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+
+  color: #85ccd9;
+  font-family: Cabin;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2{
+  color: #16445c;
+  font-family: Cabin;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more-button{
+  background-color: #ff592f;
+  color: #ffffff;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.more-container{
+  text-align: center;
+  clear: both;
+}
+
+img {
+  float: left;
+  padding: 0 10px;
+}
+
+p {
+  clear: both;
+}
+
+/*****************************
+  section1: featured services
+*****************************/
+
+.featured__client{
+  padding-bottom: 10px;
+}
+
+/***********************
+  section 2: services
+***********************/
+
+.services{
+  background-color: #e5ebeb;
+}
+
+.service-list > ul {
+  list-style: none;
+}
+
+.service-list > ul > li{
+  color: #16445c;
+}
+
+.services__container{
+  padding-top: 10px;
+}
+
+.business__container{
+  padding-bottom: 10px
+}
+
+.work__container{
+  padding-bottom: 40px;
+}
+
+.fa-long-arrow-right{
+  color: #ff592f;
+}
+
+i.fa.fa-long-arrow-right {
+  display: contents;
+}
+
+/************************
+  section 3: our methods
+*************************/
+
+.methods__container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/****************
+  Responsive
+***************/
+
+@media screen and (min-width: 600px) and (max-width: 2000px) {
+
+  .centered-content {
+    display: flex;
+    width: 1024px;
+    margin: auto;
+  }
+
+  .title-left{
+    text-align: left;
+  }
+
+  /**************
+    Section 1:
+  ***************/
+  .featured__text{
+    
+  }
+  .featured__container{
+    display: flex;
+  }
+
+
+  .more-container{
+    text-align: left;
+  }
+
+  /**************
+  *  section 2:
+  ***************/
+
+  .serve__container{
+    display: flex;
+
+  }
+
+  .services__container{
+    width: calc(1024px/3);
+  }
+
+  .work__container{
+    width: calc(1024px/3);
+  }
+
+  .work__text{
+    padding-bottom: inherit;
+  }
+
+  .business__container{
+    width: calc(1024px/3);
+  }
+
+  /*********************
+  * Section 3: methods
+  *********************/
+  .methods__container{
+    display: flex;
+    flex-direction: row;
+  }
+}
+

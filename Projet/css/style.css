@@ -1,0 +1,349 @@
+/************************************
+  Élement généraux pour le style
+************************************/
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  color: #85ccd9;
+  font-family: Cabin;
+  text-align: center;
+}
+
+h2{
+  color: #16445c;
+  font-family: Cabin;
+  text-align: center;
+}
+
+button{
+  font-family: Cabin;
+}
+
+.section {
+  padding: 10px 15px;
+}
+
+.more-container{
+  text-align: center;
+}
+
+.more-button{
+  background-color: #ff592f;
+  color: #ffffff;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: auto;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.txt-blue{
+  color: #16445c;
+}
+
+/*Centre toute les images*/
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***********************************
+  Style du header: Logo and navbar
+***********************************/
+
+.header-style {
+  background-color: #a1a1a1;
+  overflow: hidden;
+ /* padding: 20px 10px;*/
+  text-align: center;
+}
+
+.header-style__content{
+  padding: 20px;
+}
+
+.header-style__logo {
+  color: black;
+  /*padding: 12px;*/
+  text-decoration: none;
+}
+
+
+/**élément de la nav:**/
+.header-style__nav {
+  display: block;
+  background-color: #85ccd9;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav__links > a {
+  font-family: Cabin;
+  text-decoration: none;
+  color: #16445c;
+}
+
+.nav__links {
+  padding: 10px 0;
+  background: #85ccd9;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  -ms-transition: background-color 2s ease-out;
+}
+
+.nav__links:hover {
+  background-color: #ff592f;
+} 
+
+.nav__links:hover > a{
+  color: #ffffff;
+}
+
+/****************************
+  Section 1: mastermind
+****************************/
+
+.mastermind > article > .mastermind__container > ul {
+  list-style: none;
+  padding: 0;
+  color: #16445c;
+}
+
+.mastermind > article > .mastermind__container > ul > li {
+  padding-left: 1.3em;
+}
+
+.mastermind > article > .mastermind__container > ul > li:before {
+  color: #fe6d38;
+  content: "\f0a4"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; 
+  width: 1.3em; 
+}
+
+.section-1-img-mobile {
+  text-align: center;
+  display: block;
+}
+
+.section-1-img-desktop {
+  display: none;
+}
+
+.section-3_img {
+  float: left;
+}
+
+
+/**************************************
+  section 2: expertise
+***************************************/
+
+.expertise{
+  background-color: #f3f3f3;
+}
+
+.expertise__container__slides{
+  margin: 20px; /*Espaces entre chaques slides */
+}
+
+/*******************************************
+  Section 3: information us and lastest new
+********************************************/
+.information__news{
+  padding: 20px; /*espace entre le moreButton et news */
+}
+
+.information__news > article > div > div{
+  display: inline-block;
+  background-color: #16445c;
+  /* ToDo get size from template */
+  width: 75px;
+  height: 75px;
+  text-align: center;
+}
+
+.news__post{
+  color: snow;
+}
+
+.news__title{
+  display: flex;
+  align-items: center;
+}
+
+.news__post > span {
+  display: block
+}
+
+.post__title{
+  display:inline-block;
+  margin:0 10px;
+  vertical-align: middle;
+  color: #16445c;
+}
+
+.date-publish{
+  color: orangered; 
+  display: block
+}
+
+.section-3_img{
+  margin: 5px;/*Espace entre l'image about us et le texte*/
+}
+
+/***************************************
+  footer:
+***************************************/
+
+footer{
+  background-color: #85ccd9;
+}
+
+.footer {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-between;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  /* -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center; */
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.footer__container {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 980px) {
+  .footer .footer__container {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+  
+  .footer__container--center {
+    margin-right: 0;
+  }
+  
+  .footer__container--right {
+    flex-basis: 100%;
+    margin: 0;
+  } 
+}
+
+@media screen and (max-width: 680px) {
+  .footer .footer__container {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+
+.footer__social-network {
+  color: #16445c;
+}
+
+.policy__text{
+  display: inline-block;
+  color: #fe6d38;
+}
+
+.footer-button{
+  background-color: #16445c;
+  border: none;
+  color: #ffffff;
+}
+
+.centered-footer {
+  text-align: center;
+}
+
+
+/***************************
+  Responsive 
+***************************/
+@media screen and (min-width: 600px) and (max-width: 2000px) {
+  
+  /*General*/
+  .centered-content {
+    display: flex;
+    width: 1024px;
+    margin: auto;
+  }
+
+  /********************
+  *  header and nav
+  ********************/
+  .header-style__nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 40px;
+  }
+
+  .centered-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+    margin: auto;
+  }
+
+  .section-1-img-desktop {
+    display: block;
+  }
+
+  .section-1-img-mobile {
+    display: none;
+  }
+
+  /**********************
+  *  Section2: Expertise
+  **********************/
+  .expertise__container{
+    display: inline-flex;
+  }
+
+  /*
+    Bouton more vers la gauche voir: http://jsfiddle.net/cynbp3j0/3188/ */
+  .more-container{
+    text-align: left;
+  }
+
+  /****************************
+  * Section 3: about us & news
+  *****************************/
+  .information__news{
+    display: inline;
+  }
+
+  .title-left{
+    text-align: left;
+  }
+
+  /****************************
+    Footer
+  *****************************/
+
+  .centered-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+    margin: auto;
+    align-items: center;
+    padding: 20px;
+  }
+}
