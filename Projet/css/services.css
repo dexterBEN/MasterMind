@@ -51,12 +51,20 @@ p {
   padding-bottom: 10px;
 }
 
+.featured__container{
+  padding: 20px;
+}
+
 /***********************
   section 2: services
 ***********************/
 
 .services{
   background-color: #e5ebeb;
+}
+
+.serve__container{
+  padding: 20px;
 }
 
 .service-list > ul {
@@ -94,6 +102,7 @@ i.fa.fa-long-arrow-right {
 .methods__container{
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 
@@ -163,4 +172,3 @@ i.fa.fa-long-arrow-right {
     flex-direction: row;
   }
 }
-
