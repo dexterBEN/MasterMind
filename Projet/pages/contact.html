@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../css/contact.css" media="all" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="../resources/4171logo.ico"/>
     <title>Contact</title>
   </head>
@@ -17,23 +18,23 @@
         <div class="contact-us__form">
           <div><h1>CONTACT US</h1></div>
           <div class="form__container">
-            <article style="display: inline-block; padding: 20px;">
+            <article class="form__container-column">
               <p>
                 Use this form to contact us. 
                 Please note that all fields with an * are required.
               </p>
               <form>
-                <label for="firstname">Name</label>
+                <label for="firstname">Name*</label>
                 <input id="firstname" type="text" name="firstname">
                   
-                <label for="email">Email</label>
+                <label for="email">Email*</label>
                 <input id="email" type="text" name="email">
 
-                <label for="usrtel">Phone</label>
+                <label for="usrtel">Phone*</label>
                 <input id="usrtel" type="tel" name="usrtel">
 
                 
-                <label for="message">Message</label>
+                <label for="message">Message*</label>
                 <textarea cols="30" rows="10" name="message"></textarea>
 
                 <input class="send-button" type="submit" value="SEND">
@@ -43,7 +44,7 @@
         </div>
 
         <div class="contact-us__map">
-          <article style="display: inline-block; padding: 20px;">
+          <article class="contact-us__map-column">
             <div id="googleMap"></div>
             <div class="contact-us__location">
               <div class="location__headquarter">
@@ -141,8 +142,7 @@
         var marker = new google.maps.Marker({position: position, map: map});
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACWqGTYGT4CJS2IWhI5QxZmBaVnIKVo6o&callback=initMap" style="width:800px; height:600px"></script>
-    <script> src="../js/index.js"</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACWqGTYGT4CJS2IWhI5QxZmBaVnIKVo6o&callback=initMap"></script>
   </body>
 
 </html>
