@@ -1,0 +1,177 @@
+/****************************
+  Section 1: mastermind
+****************************/
+
+.mastermind__list {
+  list-style: none;
+  padding: 0;
+  color: #16445c;
+}
+
+.mastermind__list-items {
+  padding-left: 1.3em;
+}
+
+.mastermind__list-items:before {
+  color: #fe6d38;
+  content: "\f0a4"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; 
+  width: 1.3em; 
+}
+
+.section-1-img {
+  text-align: center;
+  display: block;
+  max-width: 220px;
+  max-height: 154px;
+  width: auto;
+  height: auto;
+}
+
+.section-3_img {
+  float: left;
+}
+
+/**************************************
+  section 2: expertise
+***************************************/
+
+.expertise{
+  background-color: #f3f3f3;
+}
+
+.wrapper-slider{
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.container-slider{
+  width: 100%;
+  position: relative;
+}
+
+/*******************************************
+  Section 3: about us and lastest new
+********************************************/
+.information__news{
+  padding: 20px; /*espace entre le moreButton et news */
+}
+
+.about-us__text{
+  
+}
+
+.news__date{
+  background-color: #16445c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 75px;
+  min-height: 75px;
+  text-align: center;
+}
+
+.news__post-day{
+  font-size: 30px;
+}
+
+.news__post{
+  color: snow;
+}
+
+.news__title{
+  display: flex;
+  align-items: center;
+}
+
+.news__post > span {
+  display: block
+}
+
+.post__title{
+  display:inline-block;
+  margin:0 10px;
+  vertical-align: middle;
+  color: #16445c;
+}
+
+.date-publish{
+  color: orangered; 
+  display: block
+}
+
+.section-3_img{
+  margin: 5px;/*Espace entre l'image about us et le texte*/
+}
+
+/***************************
+  Responsive 
+***************************/
+@media screen and (min-width: 1024px) {
+
+  .padding-20{
+    padding: 20px;
+  }
+
+  /**********************
+  * Section1: Mastermind
+  **********************/
+  .mastermind__list-img{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .mastermind__title{
+    text-align: left;
+  }
+
+  /**********************
+  *  Section2: Expertise
+  **********************/
+  .expertise__container, .wrapper-slider{
+    width: 100%;
+  }
+
+  .about-us__more-container{
+
+  }
+
+  
+  .expertise__slides{
+    padding: 20px; /*Espaces entre chaques slides */
+  }
+
+
+  /*
+    Bouton more vers la gauche voir: http://jsfiddle.net/cynbp3j0/3188/ */
+  .more-container {
+    text-align: left;
+  }
+
+  /****************************
+  * Section 3: about us & news
+  *****************************/
+  .information__news{
+    display: inline;
+  }
+
+  .title-left{
+    text-align: left;
+  }
+}
